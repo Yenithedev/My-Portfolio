@@ -1,0 +1,514 @@
+<section id="projects" [class]="'border-t ' + (dark ? 'border-white/10' : 'border-stone-200')">
+  <div class="mx-auto max-w-6xl px-6 py-24">
+    <!-- Section Heading -->
+    <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+      <div>
+        <p
+          [class]="
+            'font-mono text-sm uppercase tracking-[0.2em] ' +
+            (dark ? 'text-cyan-400' : 'text-cyan-600')
+          "
+        >
+          Portfolio
+        </p>
+
+        <h2
+          [class]="'mt-3 text-4xl font-bold tracking-tight ' + (dark ? 'text-white' : 'text-black')"
+        >
+          Featured Projects
+        </h2>
+      </div>
+
+      <p [class]="'max-w-md leading-relaxed ' + (dark ? 'text-slate-400' : 'text-black')">
+        A selection of applications I've built using modern frontend technologies and frameworks.
+      </p>
+    </div>
+
+    <!-- PROJECT GRID -->
+    <div class="mt-12 grid gap-8 lg:grid-cols-2">
+      <!-- ================= PROJECT 1 ================= -->
+      <article
+        [class]="
+          'group overflow-hidden rounded-3xl border shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 ' +
+          (dark ? 'border-white/10 bg-white/5 hover:shadow-none' : 'border-stone-200 bg-white')
+        "
+      >
+        <!-- Preview -->
+        <div [class]="'relative h-72 overflow-hidden ' + (dark ? 'bg-slate-900' : 'bg-stone-100')">
+          <iframe
+            src="https://ticket-generator-pi-roan.vercel.app/"
+            title="Ticket Generator"
+            class="h-full w-full border-0"
+            loading="lazy"
+          ></iframe>
+
+          <!-- Overlay -->
+          <div
+            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition group-hover:opacity-100"
+          ></div>
+        </div>
+
+        <!-- Content -->
+        <div class="p-7">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p
+                [class]="
+                  'font-mono text-xs uppercase tracking-widest ' +
+                  (dark ? 'text-cyan-400' : 'text-cyan-600')
+                "
+              >
+                01 / Frontend
+              </p>
+
+              <h3 [class]="'mt-2 text-2xl font-bold ' + (dark ? 'text-white' : 'text-black')">
+                Ticket Generator
+              </h3>
+            </div>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-emerald-400/10 text-emerald-400' : 'bg-emerald-100 text-emerald-700')
+              "
+            >
+              Live
+            </span>
+          </div>
+
+          <p [class]="'mt-4 leading-relaxed ' + (dark ? 'text-slate-400' : 'text-black')">
+            A ticket generation application featuring form validation, image upload and dynamically
+            generated ticket information.
+          </p>
+
+          <!-- Technologies -->
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              HTML
+            </span>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              CSS
+            </span>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              JavaScript
+            </span>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-7 flex gap-3">
+            <a
+              href="https://ticket-generator-pi-roan.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              [class]="
+                'rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                (dark
+                  ? 'bg-cyan-400 text-slate-950 hover:bg-cyan-300'
+                  : 'bg-stone-900 text-white hover:bg-cyan-600')
+              "
+            >
+              Live Demo ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================= PROJECT 2 ================= -->
+      <article
+        [class]="
+          'group overflow-hidden rounded-3xl border shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 ' +
+          (dark ? 'border-white/10 bg-white/5 hover:shadow-none' : 'border-stone-200 bg-white')
+        "
+      >
+        <div [class]="'relative h-72 overflow-hidden ' + (dark ? 'bg-slate-900' : 'bg-stone-100')">
+          <iframe
+            src="https://weather-app-six-taupe-85.vercel.app/"
+            title="Weather App"
+            class="h-full w-full border-0"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="p-7">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p
+                [class]="
+                  'font-mono text-xs uppercase tracking-widest ' +
+                  (dark ? 'text-cyan-400' : 'text-cyan-600')
+                "
+              >
+                02 / Frontend
+              </p>
+
+              <h3 [class]="'mt-2 text-2xl font-bold ' + (dark ? 'text-white' : 'text-black')">
+                Weather App
+              </h3>
+            </div>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-emerald-400/10 text-emerald-400' : 'bg-emerald-100 text-emerald-700')
+              "
+            >
+              Live
+            </span>
+          </div>
+
+          <p [class]="'mt-4 leading-relaxed ' + (dark ? 'text-slate-400' : 'text-black')">
+            A responsive weather application that retrieves real-time weather information from an
+            external API and displays current and forecast data.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              HTML
+            </span>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              CSS
+            </span>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              JavaScript
+            </span>
+          </div>
+
+          <div class="mt-7">
+            <a
+              href="https://weather-app-six-taupe-85.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              [class]="
+                'inline-block rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                (dark
+                  ? 'bg-cyan-400 text-slate-950 hover:bg-cyan-300'
+                  : 'bg-stone-900 text-white hover:bg-cyan-600')
+              "
+            >
+              Live Demo ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================= PROJECT 3 ================= -->
+      <article
+        [class]="
+          'group overflow-hidden rounded-3xl border shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 ' +
+          (dark ? 'border-white/10 bg-white/5 hover:shadow-none' : 'border-stone-200 bg-white')
+        "
+      >
+        <div [class]="'relative h-72 overflow-hidden ' + (dark ? 'bg-slate-900' : 'bg-stone-100')">
+          <iframe
+            src="https://mortgage-repayment-pro.vercel.app/"
+            title="Mortgage Repayment App"
+            class="h-full w-full border-0"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="p-7">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p
+                [class]="
+                  'font-mono text-xs uppercase tracking-widest ' +
+                  (dark ? 'text-cyan-400' : 'text-cyan-600')
+                "
+              >
+                03 / Angular
+              </p>
+
+              <h3 [class]="'mt-2 text-2xl font-bold ' + (dark ? 'text-white' : 'text-black')">
+                Mortgage Repayment App
+              </h3>
+            </div>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-emerald-400/10 text-emerald-400' : 'bg-emerald-100 text-emerald-700')
+              "
+            >
+              Live
+            </span>
+          </div>
+
+          <p [class]="'mt-4 leading-relaxed ' + (dark ? 'text-slate-400' : 'text-black')">
+            A responsive mortgage repayment calculator built with Angular and Tailwind CSS for
+            calculating monthly repayments and displaying financial results.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              Angular
+            </span>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              TypeScript
+            </span>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              Tailwind CSS
+            </span>
+          </div>
+
+          <div class="mt-7">
+            <a
+              href="https://mortgage-repayment-pro.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              [class]="
+                'inline-block rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                (dark
+                  ? 'bg-cyan-400 text-slate-950 hover:bg-cyan-300'
+                  : 'bg-stone-900 text-white hover:bg-cyan-600')
+              "
+            >
+              Live Demo ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================= PROJECT 4 ================= -->
+      <article
+        [class]="
+          'group overflow-hidden rounded-3xl border shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 ' +
+          (dark ? 'border-white/10 bg-white/5 hover:shadow-none' : 'border-stone-200 bg-white')
+        "
+      >
+        <div [class]="'relative h-72 overflow-hidden ' + (dark ? 'bg-slate-900' : 'bg-stone-100')">
+          <iframe
+            src="https://my-project-angular-browser.vercel.app/"
+            title="Browser Extension"
+            class="h-full w-full border-0"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="p-7">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p
+                [class]="
+                  'font-mono text-xs uppercase tracking-widest ' +
+                  (dark ? 'text-cyan-400' : 'text-cyan-600')
+                "
+              >
+                04 / Angular
+              </p>
+
+              <h3 [class]="'mt-2 text-2xl font-bold ' + (dark ? 'text-white' : 'text-black')">
+                Browser Extension
+              </h3>
+            </div>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-emerald-400/10 text-emerald-400' : 'bg-emerald-100 text-emerald-700')
+              "
+            >
+              Live
+            </span>
+          </div>
+
+          <p [class]="'mt-4 leading-relaxed ' + (dark ? 'text-slate-400' : 'text-black')">
+            A responsive browser extension interface built with Angular and Tailwind CSS, focused on
+            clean layouts and user-friendly interactions.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              Angular
+            </span>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              TypeScript
+            </span>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              Tailwind CSS
+            </span>
+          </div>
+
+          <div class="mt-7">
+            <a
+              href="https://my-project-angular-browser.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              [class]="
+                'inline-block rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                (dark
+                  ? 'bg-cyan-400 text-slate-950 hover:bg-cyan-300'
+                  : 'bg-stone-900 text-white hover:bg-cyan-600')
+              "
+            >
+              Live Demo ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ================= PROJECT 5 ================= -->
+      <article
+        [class]="
+          'group overflow-hidden rounded-3xl border shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 lg:col-span-2 ' +
+          (dark ? 'border-white/10 bg-white/5 hover:shadow-none' : 'border-stone-200 bg-white')
+        "
+      >
+        <div [class]="'relative h-80 overflow-hidden ' + (dark ? 'bg-slate-900' : 'bg-stone-100')">
+          <iframe
+            src="https://countries-search-app-three.vercel.app/"
+            title="Countries Search App"
+            class="h-full w-full border-0"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="p-7">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p
+                [class]="
+                  'font-mono text-xs uppercase tracking-widest ' +
+                  (dark ? 'text-cyan-400' : 'text-cyan-600')
+                "
+              >
+                05 / Angular
+              </p>
+
+              <h3 [class]="'mt-2 text-2xl font-bold ' + (dark ? 'text-white' : 'text-black')">
+                Countries Search App
+              </h3>
+            </div>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-emerald-400/10 text-emerald-400' : 'bg-emerald-100 text-emerald-700')
+              "
+            >
+              Live
+            </span>
+          </div>
+
+          <p [class]="'mt-4 max-w-3xl leading-relaxed ' + (dark ? 'text-slate-400' : 'text-black')">
+            A responsive country information application built with Angular and Tailwind CSS. Users
+            can search and explore country information through a clean and responsive interface.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              Angular
+            </span>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              TypeScript
+            </span>
+
+            <span
+              [class]="
+                'rounded-full px-3 py-1 text-xs font-medium ' +
+                (dark ? 'bg-white/10 text-white' : 'bg-stone-100 text-black')
+              "
+            >
+              Tailwind CSS
+            </span>
+          </div>
+
+          <div class="mt-7">
+            <a
+              href="https://countries-search-app-three.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              [class]="
+                'inline-block rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                (dark
+                  ? 'bg-cyan-400 text-slate-950 hover:bg-cyan-300'
+                  : 'bg-stone-900 text-white hover:bg-cyan-600')
+              "
+            >
+              Live Demo ↗
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

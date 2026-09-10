@@ -1,0 +1,29 @@
+<section id="about" [class]="'border-t ' + (dark ? 'border-white/10' : 'border-slate-200')">
+  <div class="mx-auto max-w-6xl px-6 py-24">
+    <div class="max-w-3xl">
+      <p
+        [class]="
+          'font-mono text-sm uppercase tracking-widest ' +
+          (dark ? 'text-cyan-400' : 'text-cyan-600')
+        "
+      >
+        About Me
+      </p>
+
+      <h2 [class]="'mt-3 text-4xl font-bold ' + (dark ? 'text-white' : 'text-black')">
+        Turning ideas into interfaces.
+      </h2>
+
+      <p [class]="'mt-6 leading-relaxed ' + (dark ? 'text-slate-400' : 'text-black')">
+        I'm a frontend developer who enjoys turning designs and ideas into functional, responsive
+        web applications. I care about clean code, good user experiences and interfaces that work
+        beautifully across different screen sizes.
+      </p>
+
+      <p [class]="'mt-4 leading-relaxed ' + (dark ? 'text-slate-400' : 'text-black')">
+        I started with the fundamentals of HTML, CSS and JavaScript and have continued building my
+        skills with Angular, TypeScript and Tailwind CSS.
+      </p>
+    </div>
+  </div>
+</section>
