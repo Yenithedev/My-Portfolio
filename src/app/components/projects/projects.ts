@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-projects',
-  styleUrl: './projects.css',
+  standalone: true,
+  imports: [],
   templateUrl: './projects.html',
+  styleUrl: './projects.css',
 })
 export class Projects {
   @Input() dark = true;

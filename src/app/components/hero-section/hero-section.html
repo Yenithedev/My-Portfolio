@@ -88,31 +88,39 @@
       <!-- Developer Card -->
       <div
         [class]="
-          'relative flex h-72 w-72 items-center justify-center rounded-3xl border shadow-xl backdrop-blur transition sm:h-96 sm:w-96 ' +
+          'relative h-[32rem] w-80 overflow-hidden rounded-3xl border shadow-xl backdrop-blur transition sm:h-[28rem] sm:w-[26rem] ' +
           (dark
             ? 'border-white/10 bg-white/5 shadow-none'
             : 'border-slate-200 bg-white shadow-2xl shadow-slate-300/60')
         "
       >
-        <div class="text-center">
-          <div
-            [class]="
-              'mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full text-4xl font-bold ' +
-              (dark ? 'bg-cyan-400 text-slate-950' : 'bg-cyan-500 text-white')
-            "
-          >
-            <img
-              class="rounded-full flex h-24 w-24 items-center justify-center"
-              src="/images/yeni.jpeg"
-              alt=""
-            />
-          </div>
+        <!-- Image -->
+        <div class="h-[84%] w-full overflow-hidden">
+          <img
+            src="/images/yeni.jpeg"
+            alt="Adeyeni Salau"
+            class="h-full w-full object-cover object-[center_15%] transition duration-500 hover:scale-105"
+          />
+        </div>
 
-          <p [class]="'text-xl font-semibold ' + (dark ? 'text-white' : 'text-slate-900')">
+        <!-- Profile Info -->
+        <div
+          [class]="
+            'flex h-[16%] flex-col items-center justify-center ' +
+            (dark ? 'bg-slate-950/50' : 'bg-white')
+          "
+        >
+          <p
+            [class]="'text-lg font-semibold sm:text-xl ' + (dark ? 'text-white' : 'text-slate-900')"
+          >
             Adeyeni Salau
           </p>
 
-          <p [class]="'mt-2 font-mono text-sm ' + (dark ? 'text-cyan-400' : 'text-cyan-600')">
+          <p
+            [class]="
+              'mt-1 font-mono text-xs sm:text-sm ' + (dark ? 'text-cyan-400' : 'text-cyan-600')
+            "
+          >
             Frontend Developer
           </p>
         </div>
