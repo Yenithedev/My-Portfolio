@@ -9,4 +9,14 @@ import { Component, Input } from '@angular/core';
 })
 export class Projects {
   @Input() dark = true;
+
+  activeModal: string | null = null;
+
+  openModal(project: string) {
+    this.activeModal = project;
+  }
+
+  closeModal() {
+    this.activeModal = null;
+  }
 }
