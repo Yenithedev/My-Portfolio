@@ -1,3 +1,4 @@
+```html
 <section id="projects" [class]="'border-t ' + (dark ? 'border-white/10' : 'border-stone-200')">
   <div class="mx-auto max-w-6xl px-6 py-24">
     <!-- ================= SECTION HEADER ================= -->
@@ -44,9 +45,9 @@
             "
           >
             <!-- IFRAME -->
+
             <div
               [class]="'relative h-72 overflow-hidden ' + (dark ? 'bg-slate-900' : 'bg-stone-100')"
-              (mouseenter)="openModal('ticket')"
             >
               <iframe
                 src="https://ticket-generator-pi-roan.vercel.app/"
@@ -127,13 +128,28 @@
                 </span>
               </div>
 
-              <div class="mt-7">
+              <!-- BUTTONS -->
+
+              <div class="mt-7 flex gap-3">
+                <button
+                  type="button"
+                  (click)="openModal('ticket')"
+                  [class]="
+                    'rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                    (dark
+                      ? 'bg-cyan-400 text-slate-950 hover:bg-cyan-300'
+                      : 'bg-cyan-600 text-white hover:bg-cyan-500')
+                  "
+                >
+                  Preview
+                </button>
+
                 <a
                   href="https://ticket-generator-pi-roan.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   [class]="
-                    'inline-block rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                    'rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
                     (dark
                       ? 'border border-white/10 text-white hover:bg-white/10'
                       : 'border border-stone-200 text-black hover:bg-stone-100')
@@ -163,9 +179,9 @@
             "
           >
             <!-- IFRAME -->
+
             <div
               [class]="'relative h-72 overflow-hidden ' + (dark ? 'bg-slate-900' : 'bg-stone-100')"
-              (mouseenter)="openModal('weather')"
             >
               <iframe
                 src="https://weather-app-six-taupe-85.vercel.app/"
@@ -246,13 +262,28 @@
                 </span>
               </div>
 
-              <div class="mt-7">
+              <!-- BUTTONS -->
+
+              <div class="mt-7 flex gap-3">
+                <button
+                  type="button"
+                  (click)="openModal('weather')"
+                  [class]="
+                    'rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                    (dark
+                      ? 'bg-cyan-400 text-slate-950 hover:bg-cyan-300'
+                      : 'bg-cyan-600 text-white hover:bg-cyan-500')
+                  "
+                >
+                  Preview
+                </button>
+
                 <a
                   href="https://weather-app-six-taupe-85.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   [class]="
-                    'inline-block rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                    'rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
                     (dark
                       ? 'border border-white/10 text-white hover:bg-white/10'
                       : 'border border-stone-200 text-black hover:bg-stone-100')
@@ -282,9 +313,9 @@
             "
           >
             <!-- IFRAME -->
+
             <div
               [class]="'relative h-72 overflow-hidden ' + (dark ? 'bg-slate-900' : 'bg-stone-100')"
-              (mouseenter)="openModal('mortgage')"
             >
               <iframe
                 src="https://mortgage-repayment-pro.vercel.app/"
@@ -365,13 +396,28 @@
                 </span>
               </div>
 
-              <div class="mt-7">
+              <!-- BUTTONS -->
+
+              <div class="mt-7 flex gap-3">
+                <button
+                  type="button"
+                  (click)="openModal('mortgage')"
+                  [class]="
+                    'rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                    (dark
+                      ? 'bg-cyan-400 text-slate-950 hover:bg-cyan-300'
+                      : 'bg-cyan-600 text-white hover:bg-cyan-500')
+                  "
+                >
+                  Preview
+                </button>
+
                 <a
                   href="https://mortgage-repayment-pro.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   [class]="
-                    'inline-block rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                    'rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
                     (dark
                       ? 'border border-white/10 text-white hover:bg-white/10'
                       : 'border border-stone-200 text-black hover:bg-stone-100')
@@ -401,9 +447,9 @@
             "
           >
             <!-- IFRAME -->
+
             <div
               [class]="'relative h-72 overflow-hidden ' + (dark ? 'bg-slate-900' : 'bg-stone-100')"
-              (mouseenter)="openModal('browser')"
             >
               <iframe
                 src="https://my-project-angular-browser.vercel.app/"
@@ -484,13 +530,28 @@
                 </span>
               </div>
 
-              <div class="mt-7">
+              <!-- BUTTONS -->
+
+              <div class="mt-7 flex gap-3">
+                <button
+                  type="button"
+                  (click)="openModal('browser')"
+                  [class]="
+                    'rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                    (dark
+                      ? 'bg-cyan-400 text-slate-950 hover:bg-cyan-300'
+                      : 'bg-cyan-600 text-white hover:bg-cyan-500')
+                  "
+                >
+                  Preview
+                </button>
+
                 <a
                   href="https://my-project-angular-browser.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   [class]="
-                    'inline-block rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                    'rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
                     (dark
                       ? 'border border-white/10 text-white hover:bg-white/10'
                       : 'border border-stone-200 text-black hover:bg-stone-100')
@@ -520,9 +581,9 @@
             "
           >
             <!-- IFRAME -->
+
             <div
               [class]="'relative h-80 overflow-hidden ' + (dark ? 'bg-slate-900' : 'bg-stone-100')"
-              (mouseenter)="openModal('countries')"
             >
               <iframe
                 src="https://countries-search-app-three.vercel.app/"
@@ -604,13 +665,28 @@
                 </span>
               </div>
 
-              <div class="mt-7">
+              <!-- BUTTONS -->
+
+              <div class="mt-7 flex gap-3">
+                <button
+                  type="button"
+                  (click)="openModal('countries')"
+                  [class]="
+                    'rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                    (dark
+                      ? 'bg-cyan-400 text-slate-950 hover:bg-cyan-300'
+                      : 'bg-cyan-600 text-white hover:bg-cyan-500')
+                  "
+                >
+                  Preview
+                </button>
+
                 <a
                   href="https://countries-search-app-three.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   [class]="
-                    'inline-block rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
+                    'rounded-full px-5 py-2.5 text-sm font-semibold transition ' +
                     (dark
                       ? 'border border-white/10 text-white hover:bg-white/10'
                       : 'border border-stone-200 text-black hover:bg-stone-100')
@@ -908,3 +984,4 @@
     </div>
   </div>
 }
+```
